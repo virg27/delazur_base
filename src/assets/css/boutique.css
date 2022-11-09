@@ -92,6 +92,14 @@ main {
   flex-direction: column;
 }
 
+.cart-item {
+  color: black;
+}
+.cart-item > div {
+  display: inline-flex;
+  
+}
+
 h1 {
   font-size: 5rem;
   text-transform: uppercase;
