@@ -100,6 +100,9 @@ main {
 .cart-item:last-of-type {
   border-bottom: none;
 }
+.cart-item > p {
+  font-weight: bold;
+}
 .cart-item > div {
   display: flex;
   justify-content: space-between;
