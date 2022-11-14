@@ -90,14 +90,33 @@ main {
 .shopping-cart-modal-articles {
   display: flex;
   flex-direction: column;
+  margin: 0 12px 24px 12px;
 }
 
 .cart-item {
   color: black;
+  border-bottom: 1px solid black;
+}
+.cart-item:last-of-type {
+  border-bottom: none;
 }
 .cart-item > div {
-  display: inline-flex;
-  
+  display: flex;
+  justify-content: space-between;
+}
+.cart-item > div button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.cart-item > div button:hover {
+  border-bottom: 1px solid black;
+}
+.cart-item > div button:focus {
+  border: 1px solid black;
+}
+.cart-item > div button:active {
+  border: none;
 }
 
 h1 {

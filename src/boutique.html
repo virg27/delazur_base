@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/assets/css/app.css">
-    <script src="/src/assets/js/boutique.js" defer></script>
+    <script type="module" src="/src/assets/js/boutique.js" defer></script>
 </head>
 <body>
   <div class="header-wrapper">
@@ -48,36 +48,36 @@
     <div class="shop-category" id="category-albums">
       <category-title>Albums</category-title>
       <div class="product-list">
-        <div class="product-card" id="product-1">
+        <div class="product-card">
           <div class="album">
             <product-name>Azur Mimosa</product-name>
             <img src="/src/assets/img/azur-mimosa.png" alt="Couverture de l'album Azur Mimosa par le groupe Delazur">
           </div>
           <div class="product-options">
-            <div class="product-option">
+            <div class="product-option" id="product-1">
               <option-name>CD</option-name>
               <option-price>20</option-price>
               <button type="button" class="btn-add-to-cart">Ajouter</button>
             </div>
-            <div class="product-option">
+            <div class="product-option" id="product-2">
               <option-name>Vinyle</option-name>
               <option-price>30</option-price>
               <button type="button" class="btn-add-to-cart">Ajouter</button>
             </div>
           </div>
         </div>
-        <div class="product-card" id="product-2">
+        <div class="product-card">
           <div class="album">
             <product-name>Nobody loves like I do</product-name>
             <img src="/src/assets/img/t-shirt1.jpg" alt="Couverture de l'album Azur Mimosa par le groupe Delazur">
           </div>
           <div class="product-options">
-            <div class="product-option">
+            <div class="product-option" id="product-3">
               <option-name>CD</option-name>
               <option-price>20</option-price>
               <button type="button" class="btn-add-to-cart">Ajouter</button>
             </div>
-            <div class="product-option">
+            <div class="product-option" id="product-4">
               <option-name>Vinyle</option-name>
               <option-price>30</option-price>
               <button type="button" class="btn-add-to-cart">Ajouter</button>
@@ -89,28 +89,28 @@
     <div class="shop-category" id="category-shirts">
       <category-title>Chandails</category-title>
       <div class="product-list">
-        <div class="product-card" id="product-3">
+        <div class="product-card">
           <div class="chandail">
             <product-name>Delazur - Bleu</product-name>
             <option-price>20</option-price>
             <img src="/src/assets/img/t-shirt2.png" alt="T-Shirt logo Delazur (bleu)">
             <div class="product-options">
-              <div class="product-option">
+              <div class="product-option" id="product-5">
                 <option-name>S</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option"">
+              <div class="product-option" id="product-6">
                 <option-name>M</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-7">
                 <option-name>L</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-8">
                 <option-name>XL</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
@@ -118,28 +118,28 @@
             </div>
           </div>
         </div>
-        <div class="product-card" id="product-4">
+        <div class="product-card">
           <div class="chandail">
             <product-name>Delazur - Jaune</product-name>
             <option-price>20</option-price>
             <img src="/src/assets/img/t-shirt3.png" alt="T-Shirt logo Delazur (jaune)">
             <div class="product-options">
-              <div class="product-option">
+              <div class="product-option" id="product-9">
                 <option-name>S</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-10">
                 <option-name>M</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-11">
                 <option-name>L</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-12">
                 <option-name>XL</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
@@ -147,28 +147,28 @@
             </div>
           </div>
         </div>
-        <div class="product-card" id="product-5">
+        <div class="product-card">
           <div class="chandail">
             <product-name>Delazur - Rose</product-name>
             <option-price>20</option-price>
             <img src="/src/assets/img/t-shirt4.png" alt="T-Shirt logo Delazur (rose)">
             <div class="product-options">
-              <div class="product-option">
+              <div class="product-option" id="product-13">
                 <option-name>S</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-14">
                 <option-name>M</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-15">
                 <option-name>L</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-16">
                 <option-name>XL</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
@@ -176,28 +176,28 @@
             </div>
           </div>
         </div>
-        <div class="product-card" id="product-6">
+        <div class="product-card">
           <div class="chandail">
             <product-name>Delazur - Simple</product-name>
             <option-price>20</option-price>
             <img src="/src/assets/img/t-shirt5.png" alt="T-Shirt logo Delazur (simple)">
             <div class="product-options">
-              <div class="product-option">
+              <div class="product-option" id="product-17">
                 <option-name>S</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-18">
                 <option-name>M</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-19">
                 <option-name>L</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-20">
                 <option-name>XL</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
@@ -205,28 +205,28 @@
             </div>
           </div>
         </div>
-        <div class="product-card" id="product-7">
+        <div class="product-card">
           <div class="chandail">
             <product-name>Nobody loves like I do</product-name>
             <option-price>20</option-price>
             <img src="/src/assets/img/t-shirt1.jpg" alt="T-Shirt imprimé pochette Nobody loves like I do">
             <div class="product-options">
-              <div class="product-option">
+              <div class="product-option" id="product-21">
                 <option-name>S</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-22">
                 <option-name>M</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-23">
                 <option-name>L</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
               </div>
-              <div class="product-option">
+              <div class="product-option" id="product-24">
                 <option-name>XL</option-name>
                 <option-price class="hidden">20</option-price>
                 <button type="button" class="btn-add-to-cart">Ajouter</button>
