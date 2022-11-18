@@ -1,0 +1,244 @@
+main {
+    background-color: #f5c555;
+    padding: 5rem;
+}
+
+/*form*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+legend {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 500;
+}
+form label {
+    color: white;
+    margin: 3rem 0;
+    font-size: medium;
+    font-weight: 500;
+}
+
+form input {
+    outline: none;
+}
+form input:focus {
+    outline: solid 2px white;
+}
+form input:hover {
+    outline: solid 2px white;
+}
+
+form input:not([type="checkbox"]), form input:not([type="radio"]) {
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1.5px solid black;
+    background: none;
+    margin-inline-end: 15%;
+}
+form input[type="color"] {
+    border: none;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*different parts of the form*/
+#info {
+    border: solid rgb(233, 139, 155) 2px;
+    margin-bottom: 5rem;
+}
+input[type=text]:invalid {
+    outline: solid 2px red;
+}
+
+#address {
+    border: solid rgb(233, 139, 155) 2px;
+    background-color: rgb(235, 163, 163);
+    padding: 7rem;
+}
+
+#province {
+    border: solid 2px;
+    color: black;
+    padding: 2rem;
+    margin-right: 25%;
+}
+
+#favorite-color {
+    width: 8rem;
+    height: 9rem;
+    margin-inline-start: 2rem;
+}
+
+/*fieldset #show*/
+#show {
+    border: none;
+    padding-bottom: 4rem;
+}
+#show legend {
+    margin: 0;
+    font-size: medium;
+    padding: 2rem 0 3rem 0;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/*fieldset #member*/
+#member {
+    border: solid 2px rgb(235, 163, 163);
+    margin-bottom: 6rem;
+    padding: 1rem 0 1rem 0;
+}
+#member div {
+    padding-inline-start: 20%;
+}
+#member input[type="radio"] {
+    margin: 0;
+}
+
+/*buttons*/
+#buttons {
+    margin: 8rem;
+    text-align: center;
+}
+#buttons input[type="submit"] {
+    background-color: #f5c555;
+    border: solid 2px black;
+    padding: 2rem 3rem;
+    margin-inline-end: 0;
+    margin-right: 50px;
+}
+#buttons input[type="reset"] {
+    background-color: #f5c555;
+    border: solid 2px black;
+    padding: 2rem 3rem;
+    margin-inline-end: 0;
+}
+
+/*range slider bar*/
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    width: 95%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: rgb(233, 139, 155);
+    border-radius: 10px;
+    border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid rgb(233, 139, 155);
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    background: #ffd779;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8.5px;
+}
+
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+/* placeholder */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+}
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(0, 0, 0);
+}
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(0, 0, 0);
+}
+
+.w50 {
+    width: initial;
+}
+
+.w100 {
+    width: initial;
+}
+
+
+/*media queries*/
+@media screen and (min-width: 1200px) {
+    fieldset {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .w20 {
+        width: 20%;
+    }
+
+    .w25 {
+        width: 25%;
+    }
+
+    .w50 {
+        width: 50%;
+    }
+
+    .w80 {
+        width: 80%;
+    }
+
+    .w100 {
+        width: 100%;
+    }
+
+    form label {
+        margin: 2rem 0;
+    }
+
+    #info {
+        padding: 5rem 3rem 5rem 3rem;
+    }
+
+    #address {
+        padding: 5rem 3rem 5rem 3rem;
+    }
+
+    #province {
+        padding: 0.8rem;
+        margin-right: 20%;
+    }
+
+    .flex-column {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    
+    #member {
+        padding: 4rem;
+    }
+
+    #member div {
+        padding-inline-start: 0;
+    }
+}
