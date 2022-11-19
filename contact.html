@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DELAZUR</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/src/assets/css/app.css">
+    </head>
+<body>
+    <header>
+        <div>
+            <img src="/src/assets/img/delazur_logo.png" alt="Logo de Delazur">
+            <h1 class="visuallyhidden">Delazur</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="serif" href="/src/index.html">Accueil</a></li>
+                <li><a class="serif" href="/src/spectacles.html">Spectacles</a></li>
+                <li><a class="serif" href="/src/boutique.html">Boutique</a></li>
+                <li><a class="serif" href="/src/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <fieldset id="info">
+                <legend>Informations générales</legend>
+                    <div class="inputgroup w50">
+                        <label for="name">Prénom</label>
+                        <input type="text" name="name" minlength="2" id="name">
+                    </div>
+                    
+                    <div class="inputgroup w50">
+                        <label for="last-name">Nom de famille</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+
+                    <div class="inputgroup w100">
+                        <label for="email">Adresse courriel</label>
+                        <input type="email" name="email" id="email">
+                        <p>Format: default@example.com</p>
+                    </div>
+
+                    <div class="inputgroup w50">
+                        <label for="birth-date">Date de naissance</label>
+                        <input type="date" name="birth-date" id="birth-date">
+                    </div>
+
+                    <div class="inputgroup w50">
+                        <label for="age">Et ton âge?</label>
+                        <input type="number" max="99" name="age" id="age">
+                    </div>
+
+                    <div class="inputgroup w100">
+                        <label for="tel">Numéro de téléphone</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+            </fieldset>
+            <fieldset id="address">
+                <legend>Adresse</legend>
+
+                <div class="inputgroup w20">
+                    <label for="address-number">Numéro civique</label>
+                    <input type="number" name="address-number" id="address-number">
+                </div>
+
+                <div class="inputgroup w20">
+                    <label for="street-name">Rue</label>
+                    <input type="text" name="street-name" id="street-name">
+                </div>
+
+                <div class="inputgroup w20">
+                    <label for="province">Province</label>
+                    <input type="text" list="province-name" id="province" placeholder="Alberta">
+                    <datalist id="province-name">
+                        <option value="Alberta">Alberta</option>
+                        <option value="Colombie-Britannique">Colombie-Britannique</option>
+                        <option value="Pronvinces de l'Atlantique">Pronvinces de l'Atlantique</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Québec">Québec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="Terre-Neuve-et-Labrador">Terre-Neuve-et-Labrador</option>
+                        <option value="Territoires du Nord-Ouest">Territoires du Nord-Ouest</option>
+                        <option value="Nunavut">Nunavut</option>
+                        <option value="Yukon">Yukon</option>
+                    </datalist>
+                </div>
+
+                <div class="inputgroup w20">
+                    <label for="country">Pays</label>
+                    <input type="text" name="country" id="country" placeholder="Canada" disabled>
+                </div>
+
+                <div class="inputgroup w20">
+                    <label for="postal-code">Code Postal</label>
+                    <input type="text" name="postal-code" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" id="postal-code">
+                    <p>Format: A0A 0A0</p>
+                </div>
+            </fieldset>
+
+            <div class="flex-column">
+                <div class="inputgroup w25">
+                    <label for="favorite-color">Votre couleur préférée?</label>
+                    <input type="color" name="favorite-color" id="favorite-color">
+                </div>
+
+                <div class="inputgroup w25">
+                    <label for="favorite-images">Vos images préférées?</label>
+                    <input type="file" multiple name="favorite-images" id="favorite-image">
+                </div>
+
+                <div class="inputgroup w25">
+                    <label for="favorite-month">Votre mois préféré? De quelle année?</label>
+                    <input type="month" name="favorite-month" id="favorite-month">
+                </div>
+
+                <div class="inputgroup w25">
+                    <label for="favorite-week">Votre semaine préférée de tous les temps?</label>
+                    <input type="week" name="favorite-week" id="favorite-week">
+                </div>
+
+                <div class="inputgroup w50">
+                    <label for="website">Un site que nous devons découvrir?</label>
+                    <input type="url" name="website" id="website">
+                </div>
+
+                <div class="inputgroup w50">
+                    <label for="rating">Quelle note lui donnez-vous?</label>
+                    <input type="range" name="rating" id="rating">
+                </div>
+
+                <div class="inputgroup w50">
+                    <label for="date-hour-show">La date et l'heure du show que tu veux venir voir?</label>
+                    <input type="datetime-local" name="date-hour-show" id="date-hour-show">
+                </div>
+
+                <div class="inputgroup w50" id="during-show">
+                    <fieldset id="show">
+                        <legend>Durant ce show, tu veux..</legend>
+                        <div>
+                            <label for="danser">Danser</label>
+                            <input type="checkbox" id="danser" name="interest" value="danser">
+                        </div>
+    
+                        <div>
+                            <label for="groover">Groover</label>
+                            <input type="checkbox" id="groover" name="interest" value="groover">
+                        </div>
+    
+                        <div>
+                            <label for="me-coucher-tard">Me coucher tard</label>
+                            <input type="checkbox" id="me-coucher-tard" name="interest" value="me-coucher-tard">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="inputgroup w100 flex">
+                    <fieldset id="member">
+                        <legend>Votre membre du groupe préféré?</legend>
+                        <div>
+                            <input type="radio" name="favorite-member" id="alain-jasmine" value="alain-jasmine">
+                            <label for="alain-jasmine">Alain Jasmine</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="favorite-member" id="jacques-danger" value="jacques-dangere">
+                            <label for="jacques-danger">Jacques Danger</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="favorite-member" id="dove" value="dove">
+                            <label for="dove">Dove</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="favorite-member" id="dr-homme" value="dr-homme">
+                            <label for="dr-homme">Dr Homme</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="inputgroup w80">
+                    <label for="password">Mot de paaaaaaaaaaaasse?</label>
+                    <input type="password" name="password" pattern="Kaput Draconis" id="password"> 
+                </div>
+            </div>
+            <div id="buttons">
+                <input type="submit" value="Soumettre" />
+                <input type="reset" value="Réinitialiser">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <img src="/src/assets/img/delazur_logo.png" alt="Logo Delazur">
+        </div>
+        <div>
+            <ul>
+                <li><a href="/src/index.html">Accueil</a></li>
+                <li><a href="/src/spectacles.html">Spectacles</a></li>
+                <li><a href="/src/boutique.html">Boutique</a></li>
+                <li><a href="/src/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music" target="_blank"><i class="fab fa-apple"></i></a></li>
+                <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music" target="_blank"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/bandcamp?style=brands" aria-label="Bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Production en médias interactifs</p>
+            <p>GR.06 - Juin 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
