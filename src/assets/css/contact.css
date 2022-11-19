@@ -163,6 +163,7 @@ input[type=range]::-webkit-slider-thumb {
 .inputgroup {
     display: flex;
     flex-direction: column;
+    margin: 6px 0;
 }
 
 /* placeholder */
