@@ -3,6 +3,46 @@ main {
     background-color: black;
 }
 
+.spotify-banner-image-fx {
+    display: none;
+}
+#image2 {
+    position: relative;
+    z-index: 6;
+    transform: translate(-200px,0);
+    opacity: 80%;
+}
+#image3 {
+    position: relative;
+    z-index: 5;
+    transform: translate(-400px,0);
+    opacity: 70%;
+}
+#image4 {
+    position: relative;
+    z-index: 4;
+    transform: translate(-600px,0);
+    opacity: 60%;
+}
+#image5 {
+    position: relative;
+    z-index: 3;
+    transform: translate(-800px,0);
+    opacity: 50%;
+}
+#image6 {
+    position: relative;
+    z-index: 2;
+    transform: translate(-1000px,0);
+    opacity: 40%;
+}
+#image7 {
+    position: relative;
+    z-index: 1;
+    transform: translate(-1200px,0);
+    opacity: 30%;
+}
+
 .spotify-banner {
     position: relative;
     padding: 50px 25px 50px 10%;
@@ -15,11 +55,12 @@ main {
 .spotify-banner img {
     width: 250px;
     height: 250px;
+    z-index: 7;
 }
 .spotify-banner .overlay {
     position: absolute;
     top: 40%;
-    z-index: 2;
+    z-index: 8;
     display: flex;
     flex-flow: column wrap;
     justify-content: center; 
@@ -115,6 +156,10 @@ h2 {
 }
 
 @media screen and (min-width: 800px) {
+    .spotify-banner-image-fx {
+        display: inline;
+    }
+
     .band-members {
         flex-direction: row;
         justify-content: space-evenly;
