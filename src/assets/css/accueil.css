@@ -93,9 +93,14 @@ h2 {
 
 .presentation {
     padding: 95px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .presentation p {
     font-size: medium;
+    text-align: left;
+    padding: 0;
 }
 
 .band-members {
