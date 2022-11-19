@@ -157,7 +157,7 @@ h2 {
 
 @media screen and (min-width: 800px) {
     .spotify-banner-image-fx {
-        display: inline;
+        display: inline-flex;
     }
 
     .band-members {
